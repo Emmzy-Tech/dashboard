@@ -210,7 +210,7 @@ main{
 }
 main .logged{
   display: flex;
-  width: 50%;
+  width: 30%;
   background: var(--color-light);
   border-radius: var(--border-radius-1);
   margin-top: 1rem;
@@ -218,6 +218,9 @@ main .logged{
   align-items: center;
   justify-content: space-around;
   
+}
+main .logged > span{
+  font-size: 2.5rem;
 }
 main .logged .dev{
   font-size: 1.5rem;
@@ -377,6 +380,9 @@ main .upp{
   }
   main .insights{
     grid-template-columns: repeat(2, 1fr);
+  }
+  main .logged{
+    width: 50%;
   }
 }
 
