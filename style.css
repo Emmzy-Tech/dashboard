@@ -216,8 +216,8 @@ main .logged{
   margin-top: 1rem;
   padding: 0.5rem 1.6rem;
   align-items: center;
-  justify-content: space-around;
-  
+  justify-content: center;
+  gap: 20px;
 }
 main .logged > span{
   font-size: 2.5rem;
@@ -291,7 +291,7 @@ main .insights1 > div h1{
   font-size: 2.7rem;
 }
 main .insights1 > div h3{
-  /* color: #eee; */
+  color: #ece80e;
 }
 main .upp{
   display: flex;
@@ -318,20 +318,23 @@ main .upp{
 .referal .ref .get-a{
   background: #af0c06;
   color: var(--color-white);
-  padding: 10px 20px;
+  padding: 10px 0px;
   cursor: pointer;
+  width: 25%;
 }
 .referal .ref input{
   font-size: 1.3rem;
   padding-left: 7px;
   font-weight: 600;
   color: #474646;
+  width: 50%;
 }
 .referal .ref .get-b{
   background: #00ec00;
   color: var(--color-white);
-  padding: 10px 20px;
+  padding: 10px 0px;
   cursor: pointer;
+  width: 25%;
 }
 .right{
   margin-top: 1.4rem;
@@ -475,5 +478,14 @@ main .upp{
   main .logged{
     width: 80%;
     /* margin: 0 auto; */
+  }
+}
+@media screen and (max-width: 500px){
+  main .insights1 > div h1{
+    font-size: 1.6em;
+  }
+  .referal .ref{
+    width: 100%;
+    justify-content: center;
   }
 }
