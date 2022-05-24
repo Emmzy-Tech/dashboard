@@ -362,6 +362,23 @@ main .upp{
   height: 100%;
   overflow: hidden;
 }
+.copied{
+  color: var(--color-white);
+  background: #111e88;
+  padding: 10px;
+  position: relative;
+  top: -12px;
+  display: none;
+}
+.copied::before{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  top: -5px;
+  background-color: #111e88;
+}
 @media screen and (max-width: 1200px) {
   .container{
     width: 94%;
